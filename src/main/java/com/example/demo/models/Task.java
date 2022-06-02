@@ -27,9 +27,6 @@ public class Task {
 	@Size(min=3, max=25)
 	private String title;
 	
-	@NotEmpty
-	private int time;
-	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="project_id") //{entity}_{attribute}
 	private Project project;
@@ -71,12 +68,6 @@ public class Task {
 	}
 	public void setUpdatedAt(Date updatedAt) {
 		this.updatedAt = updatedAt;
-	}
-	public int getTime() {
-		return time;
-	}
-	public void setTime(int time) {
-		this.time = time;
 	}
 	public Project getProject() {
 		return project;

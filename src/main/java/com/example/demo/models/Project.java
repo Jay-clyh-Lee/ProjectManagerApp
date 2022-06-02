@@ -49,7 +49,7 @@ public class Project {
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="user_id") //{entity}_{attribute}
-	private User user;
+	private User lead;
 	
 	@Column(updatable=false)
     private Date createdAt;
@@ -114,10 +114,10 @@ public class Project {
 		UserProject = userProject;
 	}
 	public User getUser() {
-		return user;
+		return lead;
 	}
 	public void setUser(User user) {
-		this.user = user;
+		this.lead = user;
 	}
 
 	// constructor
