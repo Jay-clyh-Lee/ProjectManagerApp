@@ -19,7 +19,7 @@
     
     <main id="content">
         <div>
-            <h3>Create a Project</h3>
+            <h3>Edit Project</h3>
         </div>
         <div id="edit_project">
             <form:form action="/project/update" method="POST" modelAttribute="project"> <!-- this project here matches the last "project" in modelAttribute("project") project project in the controller-->

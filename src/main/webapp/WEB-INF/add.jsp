@@ -35,7 +35,7 @@
                     <form:errors path="dueDate"/>
                     <form:input type="date" path="dueDate"/>
                 </form:label>
-                <form:input type="submit" class="btn btn-light"/>
+                <form:input type="submit" value="Submit" class="btn btn-light"/>
                 <a class="btn btn-light" href="/dashboard">Cancel</a>
             </form:form>
         </div>

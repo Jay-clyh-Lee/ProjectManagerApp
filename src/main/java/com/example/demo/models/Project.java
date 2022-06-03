@@ -1,7 +1,6 @@
 package com.example.demo.models;
 
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
